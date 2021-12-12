@@ -15,7 +15,7 @@ public struct IsEven {
   }
   
   public static func isEven(_ number: Int) -> Bool? {
-    let urlString = "https://api.isevenapi.xyz/api/\(number)/"
+    let urlString = "https://api.isevenapi.xyz/api/iseven/\(number)/"
     print(urlString)
     
     if let url = URL(string: urlString) {
