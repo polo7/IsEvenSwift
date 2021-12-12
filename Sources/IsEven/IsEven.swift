@@ -14,7 +14,7 @@ public struct IsEven {
     }
   }
   
-  static func isEven(_ number: Int) -> Bool? {
+  public static func isEven(_ number: Int) -> Bool? {
     let baseURL = "https://api.isevenapi.xyz/api/"
     let urlString = "\(baseURL)/\(number)/"
     
