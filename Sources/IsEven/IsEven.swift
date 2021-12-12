@@ -5,7 +5,7 @@ public struct IsEven {
   private init() {
   }
   
-  func parseJSON(_ data: Data) -> Bool? {
+  private static func parseJSON(_ data: Data) -> Bool? {
     let decoder = JSONDecoder()
     if let decodedData = try? decoder.decode(IsEvenData.self, from: data) {
       return decodedData.iseven
@@ -14,7 +14,7 @@ public struct IsEven {
     }
   }
   
-  func isEven(_ number: Int) -> Bool? {
+  static func isEven(_ number: Int) -> Bool? {
     let baseURL = "https://api.isevenapi.xyz/api/"
     let urlString = "\(baseURL)/\(number)/"
     
