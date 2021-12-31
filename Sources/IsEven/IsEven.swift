@@ -12,6 +12,10 @@ public struct IsEven {
     return decodedData.iseven
   }
   
+  /// Checks whether the given number is even or not using IsEven API
+  /// Due to limitations of the API it works with numbers from 0 <= N <= 999 999 only.
+  /// - Parameter number: integer number
+  /// - Returns: True if the number is even, False otherwise.
   public static func isEven(_ number: Int) -> Bool? {
     let urlString = "https://api.isevenapi.xyz/api/iseven/\(number)/"
     guard let url = URL(string: urlString) else { return nil }
