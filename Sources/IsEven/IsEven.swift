@@ -1,7 +1,6 @@
 import Foundation
 
 public struct IsEven {
-  
   private init() {
   }
   

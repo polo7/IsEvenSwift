@@ -1,7 +1,4 @@
 //
-//  File.swift
-//  
-//
 //  Created by polo on 12.12.2021.
 //
 
